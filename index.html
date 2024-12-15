@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pueblo Studio | Architecture Firm</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script> <!-- For Icons -->
+</head>
+<body>
+    <!-- Navigation -->
+    <header>
+        <nav>
+            <!-- Logo -->
+            <div class="logo">
+                <img src="PS Logo.png" alt="Logo">
+            </div>
+    
+            <!-- Navigation Menu and Language Selector -->
+            <div class="menu-container">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+                <!-- Language Selector -->
+                <div class="language-selector">
+                    <select>
+                        <option value="English">English</option>
+                        <option value="Español">Español</option>
+                    </select>
+                </div>
+            </div>
+        </nav>
+    </header>    
+    
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="slideshow">
+            <div class="slide" style="background-image: url('image1.JPG');"></div>
+            <div class="slide" style="background-image: url('image2.JPG');"></div>
+            <div class="slide" style="background-image: url('image3.JPG');"></div>
+        </div>
+        <div class="hero-text">
+            <h2>Bringing Vision to Life</h2>
+            <p>At Pueblo Studio, we’re a passionate team dedicated to creating thoughtful, community-focused designs.
+                We work closely together to ensure each project reflects the unique vision and needs of the people it serves.</p>
+            <a href="#contact" class="cta-btn">Get In Touch</a>
+        </div>
+    </section>
+    
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <h2>Our Services</h2>
+        <div class="service-items">
+            <div class="service-item">
+                <i class="fas fa-building"></i>
+                <h3>Architectural Design</h3>
+                <p>We provide community-focused architectural services that create functional, sustainable, and culturally meaningful spaces that empower and connect people.                </p>
+            </div>
+            <div class="service-item">
+                <i class="fas fa-handshake"></i>
+                <h3>Consultation</h3>
+                <p>We offer consultation services that guide communities in creating thoughtful, sustainable, and culturally relevant designs that meet their unique needs and aspirations.</p>
+            </div>
+            <div class="service-item">
+                <i class="fas fa-city"></i>
+                <h3>Interior Deisgn</h3>
+                <p>We design interior spaces that are functional, inviting, and reflect the unique culture and needs of the communities we serve.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <h2>Our Work</h2>
+        <div class="portfolio-gallery">
+            <div class="portfolio-item"><img src="image1.JPG" alt="Project 1"></div>
+            <div class="portfolio-item"><img src="image2.JPG" alt="Project 2"></div>
+            <div class="portfolio-item"><img src="image3.JPG" alt="Project 3"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>About Pueblo Studio</h2>
+        <p>Pueblo Studio is a forward-thinking architectural firm focused on sustainable, human-centric design. We work collaboratively with clients to create spaces that are functional, innovative, and visually striking.</p>
+    </section>
+
+    <!-- Partners Section -->
+    <section id="partners" class="partners">
+        <h2>Meet the Partners</h2>
+        <div class="partner-items">
+            <div class="partner-item">
+                <img src="partner1.jpg" alt="Partner 1">
+                <h3>Felipe Gloria | Project Architect</h3>
+                <p>Felipe Gloria, a proud Hispanic architect, is passionate about designing spaces that reflect the spirit of the communities they serve.
+                     With years of experience, he focuses on giving back to underserved communities. Growing up in the Chicagoland area, 
+                     he's inspired by the strength and creativity of the Hispanic community. Through Pueblo Studio, Felipe aims to create functional, 
+                     meaningful spaces that foster connection and growth, shaping neighborhoods that feel like home, celebrate culture, and bring people together. 
+                     For him, architecture is about making a positive impact and contributing to projects that truly matter. </p>
+            </div>
+            <div class="partner-item">
+                <img src="GMartinez.png" alt="Partner 2">
+                <h3>Geovanny Martinez | Project Manager</h3>
+                <p>Geovanny Martinez, a proud Hispanic professional with extensive project management experience, 
+                    excels in overseeing projects with strong collaboration, organization, and attention to detail. 
+                    Growing up in Mexico, he's inspired by the resilience of the Mexican community and focuses on projects that positively impact underserved areas.
+                     For Geovanny, project management goes beyond deadlines—it's about creating empowering spaces that honor culture and community needs.
+                     He is dedicated to contributing to projects that strengthen and enrich communities.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <form action="https://formspree.io/f/mnnqyvzn" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit" class="cta-btn">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Pueblo Studio | All Rights Reserved</p>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

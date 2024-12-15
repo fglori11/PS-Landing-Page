@@ -1,0 +1,402 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic body and layout settings */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Header Navigation */
+/* Header Navigation */
+header {
+    background: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+header nav .logo img {
+    height: 50px; /* Adjust to fit your logo */
+    width: auto;
+    display: block;
+}
+
+/* Align menu items and language selector to the right */
+header nav .menu-container {
+    display: flex;
+    align-items: center;
+    margin-left: auto; /* Push menu items to the right */
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+header nav ul li a:hover {
+    color: #f39c12;
+}
+
+/* Style for the language selector */
+header nav .language-selector {
+    margin-left: 20px; /* Space between menu and language selector */
+}
+
+header nav .language-selector select {
+    padding: 5px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    color: #333;
+    cursor: pointer;
+}
+
+header nav .language-selector select:focus {
+    outline: none;
+    border-color: #f39c12;
+}
+
+
+/* Hero Section */
+.hero {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(80, 80, 80);
+    text-align: center;
+    overflow: hidden;
+}
+
+.hero-text {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    max-width: 1000px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.hero-text h2 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.hero-text p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.cta-btn {
+    background-color: #f39c12;
+    color: #fff;
+    padding: 15px 25px;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.cta-btn:hover {
+    background-color: #e67e22;
+}
+
+/* Slideshow */
+.slideshow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    animation: slideshow 15s infinite;
+}
+
+.slide:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.slide:nth-child(2) {
+    animation-delay: 5s;
+}
+
+.slide:nth-child(3) {
+    animation-delay: 10s;
+}
+
+@keyframes slideshow {
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 1;
+    }
+    40% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+/* Services Section */
+.services {
+    padding: 80px 20px;
+    text-align: center;
+    background: #f8f8f8;
+}
+
+.services h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.service-items {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.service-item {
+    width: 30%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.service-item i {
+    font-size: 50px;
+    color: #f39c12;
+    margin-bottom: 20px;
+}
+
+.service-item h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.service-item p {
+    font-size: 16px;
+}
+
+/* Portfolio Section */
+.portfolio {
+    padding: 80px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.portfolio h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.portfolio-gallery {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.portfolio-item {
+    width: 30%;
+    margin-bottom: 20px;
+}
+
+.portfolio-item img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* About Section */
+.about {
+    padding: 60px 20px;
+    background-color: #f8f8f8;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 18px;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Partners Section */
+.partners {
+    padding: 40px 20px;
+    background-color: #f8f8f8;
+    text-align: center;
+}
+
+.partners h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.partner-items {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.partner-item {
+    width: 45%;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.partner-item img {
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.partner-item h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.partner-item p {
+    font-size: 16px;
+    line-height: 1.5;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Contact Section */
+.contact {
+    padding: 60px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.contact form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact input,
+.contact textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact button {
+    padding: 15px 25px;
+    background-color: #f39c12;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact button:hover {
+    background-color: #e67e22;
+}
+
+/* Footer Section */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+.social-links {
+    margin-top: 10px;
+}
+
+.social-links a {
+    color: #fff;
+    font-size: 20px;
+    margin: 0 10px;
+}
+
+.social-links a:hover {
+    color: #f39c12;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+    }
+
+    .service-item,
+    .portfolio-item {
+        width: 100%;
+    }
+
+    .partner-item {
+        width: 100%;
+    }
+
+    .hero-text h2 {
+        font-size: 24px;
+    }
+
+    .hero-text p {
+        font-size: 16px;
+    }
+
+    .cta-btn {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+}
